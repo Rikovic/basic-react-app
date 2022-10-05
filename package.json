@@ -1,6 +1,6 @@
 {
   "name": "basic-react-app",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://rikovic.github.io/basic-react-app",
   "private": true,
   "dependencies": {

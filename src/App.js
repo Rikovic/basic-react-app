@@ -3,21 +3,35 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom'
 import './App.css';
 import About from './About';
 
+function Home() {
+  return (      
+    <header className="App-header">
+      <img src={logo} className="App-logo" alt="logo" />
+      <p>
+        This is a test <code>src/App.js</code> and save to reload.
+      </p>
+    </header>
+  )
+}
+
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          This is a test <code>src/App.js</code> and save to reload.
-        </p>
         <Router>
-        <Link to="/about">About Test Page</Link>
+          <ul>
+            <li>
+              <Link to="/">Home Page</Link>
+            </li>
+            <li>
+              <Link to="/about">About Test Page</Link>
+            </li>
+          </ul>
           <Routes>
-            <Route exact path="/about" element={<About/>}/>
+            <Route exact path="/" element={<Home/>}/>
+            <Route exact path="/basic-react-app" element={<Home/>}/>
+            <Route exact path="/basic-react-app/about" element={<About/>}/>
           </Routes>
       </Router>
-      </header>
     </div>
   );
 }
