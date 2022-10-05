@@ -20,10 +20,10 @@ function App() {
         <Router>
           <ul>
             <li>
-              <Link to="/">Home Page</Link>
+              <Link to="/basic-react-app">Home Page</Link>
             </li>
             <li>
-              <Link to="/about">About Test Page</Link>
+              <Link to="/basic-react-app/about">About Test Page</Link>
             </li>
           </ul>
           <Routes>
