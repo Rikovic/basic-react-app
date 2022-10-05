@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom'
 import './App.css';
 import About from './About';
 
@@ -11,8 +11,8 @@ function App() {
         <p>
           This is a test <code>src/App.js</code> and save to reload.
         </p>
-        <a href="/about">About Test Page</a>
         <Router>
+        <Link to="/about">About Test Page</Link>
           <Routes>
             <Route exact path="/about" element={<About/>}/>
           </Routes>
